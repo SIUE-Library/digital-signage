@@ -1,0 +1,1 @@
+gnome-terminal -e /home/ubuntu/slides/runslides.sh

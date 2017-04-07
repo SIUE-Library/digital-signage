@@ -1,0 +1,1 @@
+python2 /home/ubuntu/slides/slideshow.py
