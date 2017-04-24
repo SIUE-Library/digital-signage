@@ -22,7 +22,7 @@ If you are unsure on how to install an operating system to an external drive, a 
 > https://www.raspberrypi.org/documentation/installation/installing-images/
 
 After installing your operating system, verify that the Pi turns on and boots correctly. If you have any troubles with this, another helpful guide can be found at 
-> (https://www.raspberrypi.org/forums/viewtopic.php?t=58151)
+> https://www.raspberrypi.org/forums/viewtopic.php?t=58151
 
 When setting up your operating system for the first time, make sure you **check the box to log-in automatically**, otherwise you will need to log on **manually each time** you start on the pi. 
 The current script also assumes the user name has been set to "ubuntu". This can be changed, however, by modifying the file path where necessary in the scripts.
@@ -56,12 +56,13 @@ Any images that you would like to play in the slideshow should be added to the "
 
 After you have loaded your images, simply reboot your computer and the your slideshow should automatically start on boot.
 To cancel your slideshow and return to the desktop, press either `CTRL + c` or `ALT + F4` to escape the program.
-# digitalsignage
+
+# DigitalSignage
 
 ## Project Team 
 
-Team Leader: Dale Auten (dauten@siue.edu)
-Team Member: Jake Grubb (jgrubb013@gmail.com)
-Manager: Sarah Park (gpark@siue.edu)
+- Team Leader: Dale Auten (dauten@siue.edu)
+- Team Member: Jake Grubb (jagrubb@siue.edu)
+- Project Manager: Sarah Park (gpark@siue.edu)
 
 ## LICENSE MIT License
