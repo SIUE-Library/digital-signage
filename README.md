@@ -51,7 +51,7 @@ The name and comment can be whatever you like, but we recommend naming it someth
 ## Adding pictures and running your program:
 Any images that you would like to play in the slideshow should be added to the "gallery" folder in the "slides" directory. The program will automatically draw anything from that folder into the slideshow.  The pool of images the programs draws from is refreshed each time the image updates, so any images that are added to the folder will be added to the slideshow immmediatly; there is no need to restart the program.
 
-**NOTE:  Currently only images with extensions .gif, .jpg, .jpeg, and .png will be used.  Any other file in the gallery directory will be ignored.  You can manually modify the program to accept other file types (see in-code comments) however we make no guarantees these will be supported by tkinter**
+**NOTE:  Currently only images with extensions .jpg, .jpeg, and .png will be used.  Any other file in the gallery directory will be ignored.  You can manually modify the program to accept other file types (see in-code comments) however we make no guarantees these will be supported by tkinter**
 
 After you have loaded your images, simply reboot your computer and the your slideshow should automatically start on boot.
 To cancel your slideshow and return to the desktop, press either `CTRL + c` or `ALT + F4` to escape the program.
