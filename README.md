@@ -59,8 +59,11 @@ To cancel your slideshow and return to the desktop, press either `CTRL + c` or `
 ## Miscellanous Notes
 The mouse will be automatically hidden by the program.  It is invisible during runtime, but still technically exists.
 Left clicking will automatically progress the slideshow one image.  This also reset the timer that controls image changing.  This is useful for quickly navigating the slideshow.
+
 Most parameters you may want to change are explained by the in-code comments.  Even if you don't have a strong knowledge of python or tkinter these should guide you through customizing the program.
+
 As mentioned above, any image added to the folder will be automatically added to slideshow.  It is beyond the scope of this tutorial, but this means you could in theory set up some form of file sharing through NFS/FTP/SSH/etc. to remotely control the program.
+
 This tutorial convered the entire set up of the digital signage: taking you from a factory raspberry pi and completely automating this slideshow.  However this python script also runs well out of box on any computer with the proper python libraries installed.
 
 # DigitalSignage
