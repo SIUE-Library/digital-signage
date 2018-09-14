@@ -34,7 +34,6 @@ The Python script has a few dependencies and a few extra utilities will need to 
 | Utility Name | Description |
 | ------------ | ------------|
 | `gnome-terminal`| Necessary in order to run the script on boot|
-| `unclutter`| Hides your mouse pointer after a few seconds of inactivity, so your slideshow doesn't have a mouse on it|
 
 ### Python Libraries:
 **This program uses Python 2**, and assumes it is installed with your operating system. It also requires the following libraries to be installed.
@@ -50,12 +49,22 @@ Lastly, you will need to set `execslides.sh` to boot at start. This process will
 The name and comment can be whatever you like, but we recommend naming it something memorable and easily identifiable, in case of later troubleshooting.
 
 ## Adding pictures and running your program:
-Any images that you would like to play in the slideshow should be added to the "gallery" folder in the "slides" directory. The program will automatically draw anything from that folder into the slideshow. 
+Any images that you would like to play in the slideshow should be added to the "gallery" folder in the "slides" directory. The program will automatically draw anything from that folder into the slideshow.  The pool of images the programs draws from is refreshed each time the image updates, so any images that are added to the folder will be added to the slideshow immmediatly; there is no need to restart the program.
 
-**Caution: Attempting to place _ANYTHING_ other than images into the gallery will cause the program to crash!**
+**NOTE:  Currently only images with extensions .jpg, .jpeg, and .png will be used.  Any other file in the gallery directory will be ignored.  You can manually modify the program to accept other file types (see in-code comments) however we make no guarantees these will be supported by tkinter**
 
 After you have loaded your images, simply reboot your computer and the your slideshow should automatically start on boot.
 To cancel your slideshow and return to the desktop, press either `CTRL + c` or `ALT + F4` to escape the program.
+
+## Miscellanous Notes
+The mouse will be automatically hidden by the program.  It is invisible during runtime, but still technically exists.
+Left clicking will automatically progress the slideshow one image.  This also reset the timer that controls image changing.  This is useful for quickly navigating the slideshow.
+
+Most parameters you may want to change are explained by the in-code comments.  Even if you don't have a strong knowledge of python or tkinter these should guide you through customizing the program.
+
+As mentioned above, any image added to the folder will be automatically added to slideshow.  It is beyond the scope of this tutorial, but this means you could in theory set up some form of file sharing through NFS/FTP/SSH/etc. to remotely control the program.
+
+This tutorial convered the entire set up of the digital signage: taking you from a factory raspberry pi and completely automating this slideshow.  However this python script also runs well out of box on any computer with the proper python libraries installed.
 
 # DigitalSignage
 
